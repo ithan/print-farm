@@ -1,0 +1,40 @@
+{
+  "name": "print-farm",
+  "version": "1.0.0",
+  "description": "A simple filament control for your farm",
+  "main": "example.js",
+  "directories": {
+    "example": "examples"
+  },
+  "quokka": {
+    "plugins": ["jsdom-quokka-plugin"],
+    "jsdom": {
+        "file": "./examples/navbar/navbar.html"
+    }
+},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ithan/print-farm.git"
+  },
+  "keywords": [
+    "3dprinting",
+    "html",
+    "node",
+    "learning"
+  ],
+  "author": "Keno and Ithan",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ithan/print-farm/issues"
+  },
+  "homepage": "https://github.com/ithan/print-farm#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "jsdom": "^16.4.0"
+  }
+}
