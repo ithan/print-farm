@@ -14,6 +14,24 @@ const filamentList = [
         "name" : "Prusament Galaxy Silver",
         "quantity" : 8,
         "availability" : 'false'
+    },
+    {
+        "_id": 3,
+        "name" : "Prusament Galaxy Purple",
+        "quantity" : 2,
+        "availability" : 'false'
+    },
+    {
+        "_id": 4,
+        "name" : "Prusament Jet Blac",
+        "quantity" : 111,
+        "availability" : 'false'
+    },
+    {
+        "_id": 5,
+        "name" : "Prusament Ms. Pink",
+        "quantity" : 3,
+        "availability" : 'true'
     }
 ];
 
@@ -45,8 +63,18 @@ function generateRow(filamentInfo){
     
     return returnRow;
 }
+
 console.log(
-    generateRow(
-        filamentList[0]
-    )
+    filamentList.length
 )
+
+
+for(
+    let counter = 0;
+    counter < filamentList.length;
+    counter++
+)
+{
+    let firstRowContent = generateRow(filamentList[counter]);
+    table.innerHTML += firstRowContent;
+}
